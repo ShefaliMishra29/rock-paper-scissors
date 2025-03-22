@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissor</title>
+  <link rel="stylesheet" href="/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="score-board">
+      <div class="game-name">
+        <p>ROCK</p>
+        <p>PAPER</p>
+        <P>SCISSORS</P>
+      </div>
+      <div class="scores">
+        <div class="score">
+          <p>COMPUTER SCORE</p>
+          <p id="compter-score">0</p>
+        </div>
+        <div class="score">
+          <p>YOUR <br/> SCORE</p>
+          <p id="user-score">0</p>
+        </div>
+      </div>
+    </div>
+    <div class="triangle-container">
+      <div class="triangle triangle1"></div>
+      <div class="triangle triangle2"></div>
+      <div class="choices">
+        <div class="choice"  id="paper">
+          <img src="./images/paper.png" alt="paper"/>
+        </div>
+        <div class="choice" id="rock" >
+          <img src="./images/rock.png" alt="rock"/>
+        </div>
+        <div class="choice"  id="scissors" >
+          <img src="./images/scissors.png"alt="scissor"/>
+        </div>
+      </div>
+    </div>
+    <!-- New Result Display (Initially Hidden) -->
+<div class="result-container" style="display: none;">
+  <div class="user-choice">
+    <p>You Picked</p>
+    <div class="choice" id="user-choice-display">
+      <img src="" alt="User Choice">
+    </div>
+  </div>
+
+  <div class="message-container">
+    <p id="message">Make Your Move!</p>
+    <button id="play-again-btn">Play Again</button>
+  </div>
+
+  <div class="computer-choice">
+    <p>Computer Picked</p>
+    <div class="choice" id="computer-choice-display">
+      <img src="" alt="Computer Choice">
+    </div>
+  </div>
+</div>
+
+  </div>
+    <div class="rules-container">
+      <h2>Game Rules</h2>
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.
+        </li><br/>
+        <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or just "rock, paper, scissors."
+        </li><br/>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time
+        </li><br/>
+        <li>
+          If both players lay down the same hand, each player lays down another hand
+        </li><br/>
+        <span class="close-btn" onclick="toggleRules()">&times;</span>
+      </ul>
+    </div>
+    <button class="rules-btn">RULES</button>
+    <button id="reset-btn">RESET</button>
+  <script src="/script.js"></script>
+</body>
+</html>
